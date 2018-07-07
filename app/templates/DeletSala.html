@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block page_content %}
+  <body>
+
+    <form class="well form-horizontal" action="/DeletSala" method="post"  id="contact_form" autocomplete="off">
+<fieldset>
+
+<legend>Eliminar una Sala de la base de datos</legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Numero de la sala</label>
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="Nro_sala" placeholder="Numero de Sala" class="form-control"  type="number">
+    </div>
+  </div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Registrar <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+    </form>
+  </body>
+{% endblock %}

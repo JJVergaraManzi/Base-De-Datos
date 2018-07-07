@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block page_content %}
+  <head>
+    <title> Inicio de la pagina web</title>
+  </head>
+  <!-- Side Widget Well -->
+                <div class="well">
+                    <h4>funcionarios</h4>
+                </div>
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <h4>Algunos de nuestros doctores</h4>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled">
+
+                                {% for doctores in doctores %}
+                                <li>{{doctores[0]}} {{doctores[1]}}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <!-- /.col-lg-6 -->
+                    </div>
+                  <div class="well">
+                    <h4>Algunos de nuestros cirujanos</h4>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <ul class="list-unstyled">
+                          {% for cirujanos in cirujanos %}
+                          <li>{{cirujanos[0]}} {{cirujanos[1]}}</li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- /.row -->
+</div>
+{% endblock %}

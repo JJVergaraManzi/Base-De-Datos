@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Ficha Medicas de Base</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      </head>
+        <body>
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="/home">Fichas Medicas</a>
+                  </div>
+                    <ul class="nav navbar-nav">
+                    <li><a a href="/about">Acerca de</a></li>
+                    <li><a href="/asignDoc">Asignar Doctor</a></li>
+                    <li><a href="/anadir_Pac">Ingresar un paciente</a></li>
+                    <li><a href="/asignSala">Ingresar una sala nueva</a></li>
+                    <li><a href="/UpdtSala">Traslado de sala</a></li>
+                    <li><a href="/asignEnf">Ingresar un enfermero</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" >Eliminar de la base<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="/DeletFunc">funcionario</a></li>
+                    <li><a href="/DeletSala">Sala</a></li>
+                    <li><a href="/DeletPac">Paciente</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    {%block page_content%}
+    {%endblock%}
+  </body>
+</html>

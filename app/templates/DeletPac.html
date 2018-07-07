@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block page_content %}
+  <body>
+
+    <form class="well form-horizontal" action="/DeletePac" method="post"  id="contact_form" autocomplete="off">
+<fieldset>
+
+<legend>Eliminar un Paciente del hospital de la base</legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Rut del paciente</label>
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="rut" placeholder="Rut del paciente" class="form-control"  type="number">
+    </div>
+  </div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Registrar <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+  </body>
+{% endblock %}

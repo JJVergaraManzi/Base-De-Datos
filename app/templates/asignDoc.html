@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+{% block page_content %}
+  <body>
+    <form class="form-horizontal" action="/anadirDoc" method="POST"  id="contact_form" autocomplete="off">
+      <fieldset>
+        <legend>Ingrese sus datos, Doctor!</legend>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Nombre</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  name="nombre" placeholder="Nombre" class="form-control"  type="text">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Apellido</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="apellido" placeholder="Apellido" class="form-control"  type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Edad</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="edad" placeholder="Ingrese su edad" class="form-control"  type="number" min="1">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-3 control-label">RUT</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+            <input name="rut" placeholder="Ingrese su rut sin guion" class="form-control" type="number" min="1">
+          </div>
+        </div>
+      </div>
+
+</div>
+<div class="form-group">
+  <label class="col-sm-3 control-label">El Doctor es cirujano?</label>
+  <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-ok"></i></span>
+    <input type="radio" name="cirujano" value="1">Si<br>
+    <input type="radio" name="cirujano" value="0">No<br>
+  </select>
+</div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-3 control-label">Tratamiento</label>
+    <div class="input-group">
+        <span class="input-group-addon"><i class=" 	glyphicon glyphicon-bookmark"></i></span>
+  <input name="tratamiento" placeholder="Ingrese su tratamiento" class="form-control" type="text">
+    </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-3 control-label">Tipo de consulta</label>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+  <input name="Tipo_Cons" placeholder="ingrese su consulta deseada" class="form-control"  type="text">
+    </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-3 control-label">Cual es su genero?</label>
+    <div class="input-group">
+        <span class="input-group-addon"><i class=" 	glyphicon glyphicon-th-list"></i></span>
+        <select name="genero">
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+        <option value="otro">otro</option>
+      </select>
+
+</div>
+<div class="form-group">
+  <label class="col-sm-3 control-label">Fecha</label>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+  <input name="fecha" placeholder="Ej: mm-dd-yyyy hh:mm" class="form-control" type="datetime-local" onchange="VerDisp()">
+  <script>
+
+  </script>
+</div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-3 control-label">Sala asignada</label>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="Nro_salaDoc" placeholder="Ingrese el numero de su sala" class="form-control"  type="number">
+</div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-sm-3 control-label"></label>
+  <div class="col-sm-3">
+    <button type="submit" name="submit "class="btn btn-warning" >Registrar <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+  </body>
+{% endblock %}

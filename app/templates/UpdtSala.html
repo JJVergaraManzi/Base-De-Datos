@@ -1,0 +1,19 @@
+{%extends "layout.html"%}
+{% block page_content %}
+<body>
+  <form class="well form-horizontal" action="/UpdtSala" method="post"  id="contact_form" autocomplete="off">
+<fieldset>
+  <legend>Actualize la sala de atencion</legend>
+  <div class="form-group">
+    <label for="rut">RUT</label>
+    <input name="rut"type="text" class="form-control"  placeholder="Ingrese el rut del doctor a quien desea trasladar">
+  </div>
+  <div class="form-group">
+    <label for="Nro_sala">Numero de sala</label>
+    <input name="Nro_Sala" type="number" class="form-control"  placeholder="Ingrese la nueva sala de las disponibles">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  </form>
+</body>
+{% endblock %}

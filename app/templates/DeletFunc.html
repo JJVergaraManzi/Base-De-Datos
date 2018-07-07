@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block page_content %}
+  <body>
+
+    <form class="well form-horizontal" action="/DeletFunc" method="post"  id="contact_form" autocomplete="off">
+      <fieldset>
+
+        <legend>Eliminar un funcionario del hospital de la base</legend>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Rut del funcionario</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  name="rut" placeholder="Rut del funcionario" class="form-control"  type="number">
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label"></label>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-warning" >Registrar <span class="glyphicon glyphicon-send"></span></button>
+          </div>
+        </div>
+
+        </fieldset>
+      </form>
+    </form>
+  </body>
+{% endblock %}

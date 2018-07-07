@@ -1,30 +1,29 @@
 {% extends "layout.html" %}
-{% block page_content 
+{% block page_content %}
   <body>
-
-    <form class="well form-horizontal" action="/anadir_Pac " method="post"  id="contact_form" autocomplete="off">
+    <form class="well form-horizontal" action="/anadir_Pac" method="POST" autocomplete="off">
 <fieldset>
 
-<legend>Ingrese sus datos, Doc!</legend>
+<legend>Ingrese sus datos, Paciente!</legend>
 
 <div class="form-group">
-  <label class="col-md-4 control-label">Nombre</label>
+  <label class="col-sm-3 control-label">Nombre</label>
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name=""="nombre" placeholder="Nombre" class="form-control"  type="text">
+  <input  name="nombre" placeholder="Nombre" class="form-control"  type="text">
     </div>
   </div>
 
 <div class="form-group">
-  <label class="col-md-4 control-label" >Apellido</label>
+  <label class="col-sm-3 control-label" >Apellido</label>
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name=""="apellido" placeholder="Apellido" class="form-control"  type="text">
+  <input name="apellido" placeholder="Apellido" class="form-control"  type="text">
     </div>
   </div>
 
 <div class="form-group">
-  <label class="col-md-4 control-label">Edad</label>
+  <label class="col-sm-3 control-label">Edad</label>
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
   <input name="edad" placeholder="Ingrese su edad" class="form-control"  type="number" min="1">
@@ -32,36 +31,35 @@
   </div>
 
 <div class="form-group">
-  <label class="col-md-4 control-label">RUT</label>
+  <label class="col-sm-3 control-label">RUT</label>
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="rut" placeholder="Ingrese su rut" class="form-control" type="number" min="1">
+  <input name="rut" placeholder="Ingrese su rut sin guion" class="form-control" type="number" min="1">
     </div>
   </div>
 
 <div class="form-group">
-  <label class="col-md-4 control-label">Especialidad</label>
+  <label class="col-sm-3 control-label">Tratamiento</label>
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="espec" placeholder="Ingrese su especialidad" class="form-control" type="text">
+  <input name="tratamiento" placeholder="Ingrese su tratamiento" class="form-control" type="text">
     </div>
 </div>
-
 <div class="form-group">
-  <label class="col-md-4 control-label">Rut del Cirujano Asignado</label>
+  <label class="col-sm-3 control-label">Cual es su genero?</label>
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="Rut_CirEnf" placeholder="Ingrese el rut del Cirujano asignado" class="form-control"  type="number">
+        <select name="genero">
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+        <option value="otro">otro</option>
+      </select>
 </div>
 </div>
-
-<!-- Success message -->
-<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Gracias por ingresar sus datos</div>
-
 <!-- Button -->
 <div class="form-group">
-  <label class="col-md-4 control-label"></label>
-  <div class="col-md-4">
+  <label class="col-sm-3 control-label"></label>
+  <div class="col-sm-3">
     <button type="submit" class="btn btn-warning" >Registrar <span class="glyphicon glyphicon-send"></span></button>
   </div>
 </div>
@@ -70,6 +68,6 @@
 </form>
 </div>
     </div><!-- /.container -->
-    </form>
-  </body
+      </body>
+
 {% endblock %}

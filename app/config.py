@@ -1,5 +1,5 @@
 database ='fichamedica'
 port = 5432
-user='postgres'
+user='juan'
 host='localhost'
-password= 'alumno'
+password= '1234'
