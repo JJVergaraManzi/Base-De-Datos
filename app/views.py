@@ -7,9 +7,6 @@ import psycopg2
 conn = psycopg2.connect("dbname=%s user=%s password=%s"%(database,user,password))
 cur = conn.cursor()
 
-@app.before_request
-def before_request():
-    pass
 @app.route('/')
 @app.route('/home', methods=['POST','GET'])
 def home():
